@@ -20,7 +20,8 @@ namespace SistemaHotel
         private void FrmLogin_Load(object sender, EventArgs e)
         {
             pnlLogin.Location = new Point(this.Width /2 - 166, Height / 2 - 170);
-            btnLogin.FlatAppearance.MouseOverBackColor = Color.FromArgb();
+            btnLogin.FlatAppearance.MouseOverBackColor = Color.FromArgb(21, 114, 160);
+            btnLogin.FlatAppearance.MouseDownBackColor = Color.FromArgb(8, 72, 103);
         }
     }
 }
