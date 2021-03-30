@@ -19,7 +19,7 @@ namespace SistemaHotel
 
         private void FrmLogin_Load(object sender, EventArgs e)
         {
-            pnlLogin.Location = new Point();
+            pnlLogin.Location = new Point(this.Width /2 - 166, Height / 2 - 170);
         }
     }
 }
