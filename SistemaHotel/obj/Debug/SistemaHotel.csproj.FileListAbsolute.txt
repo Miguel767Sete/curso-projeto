@@ -2,9 +2,9 @@ C:\ProjetosC#\SistemaHotel\SistemaHotel\bin\Debug\SistemaHotel.exe.config
 C:\ProjetosC#\SistemaHotel\SistemaHotel\bin\Debug\SistemaHotel.exe
 C:\ProjetosC#\SistemaHotel\SistemaHotel\bin\Debug\SistemaHotel.pdb
 C:\ProjetosC#\SistemaHotel\SistemaHotel\obj\Debug\SistemaHotel.csprojAssemblyReference.cache
-C:\ProjetosC#\SistemaHotel\SistemaHotel\obj\Debug\SistemaHotel.Login.resources
 C:\ProjetosC#\SistemaHotel\SistemaHotel\obj\Debug\SistemaHotel.Properties.Resources.resources
 C:\ProjetosC#\SistemaHotel\SistemaHotel\obj\Debug\SistemaHotel.csproj.GenerateResource.cache
 C:\ProjetosC#\SistemaHotel\SistemaHotel\obj\Debug\SistemaHotel.csproj.CoreCompileInputs.cache
 C:\ProjetosC#\SistemaHotel\SistemaHotel\obj\Debug\SistemaHotel.exe
 C:\ProjetosC#\SistemaHotel\SistemaHotel\obj\Debug\SistemaHotel.pdb
+C:\ProjetosC#\SistemaHotel\SistemaHotel\obj\Debug\SistemaHotel.FrmLogin.resources
