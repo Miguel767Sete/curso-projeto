@@ -16,5 +16,10 @@ namespace SistemaHotel
         {
             InitializeComponent();
         }
+
+        private void FrmLogin_Load(object sender, EventArgs e)
+        {
+            pnlLogin.Location = new Point();
+        }
     }
 }

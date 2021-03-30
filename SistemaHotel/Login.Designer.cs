@@ -35,7 +35,9 @@ namespace SistemaHotel
             // 
             // pnlLogin
             // 
-            this.pnlLogin.Location = new System.Drawing.Point(203, 37);
+            this.pnlLogin.BackColor = System.Drawing.Color.Transparent;
+            this.pnlLogin.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pnlLogin.BackgroundImage")));
+            this.pnlLogin.Location = new System.Drawing.Point(213, 57);
             this.pnlLogin.Name = "pnlLogin";
             this.pnlLogin.Size = new System.Drawing.Size(332, 340);
             this.pnlLogin.TabIndex = 0;
@@ -54,6 +56,7 @@ namespace SistemaHotel
             this.Name = "FrmLogin";
             this.Text = "Login";
             this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
+            this.Load += new System.EventHandler(this.FrmLogin_Load);
             this.ResumeLayout(false);
 
         }
