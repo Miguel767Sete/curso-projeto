@@ -31,16 +31,30 @@ namespace SistemaHotel
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FrmLogin));
             this.pnlLogin = new System.Windows.Forms.Panel();
+            this.txtUsuario = new System.Windows.Forms.TextBox();
+            this.pnlLogin.SuspendLayout();
             this.SuspendLayout();
             // 
             // pnlLogin
             // 
             this.pnlLogin.BackColor = System.Drawing.Color.Transparent;
             this.pnlLogin.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pnlLogin.BackgroundImage")));
-            this.pnlLogin.Location = new System.Drawing.Point(213, 57);
+            this.pnlLogin.Controls.Add(this.txtUsuario);
+            this.pnlLogin.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.pnlLogin.Location = new System.Drawing.Point(207, 50);
             this.pnlLogin.Name = "pnlLogin";
             this.pnlLogin.Size = new System.Drawing.Size(332, 340);
             this.pnlLogin.TabIndex = 0;
+            // 
+            // txtUsuario
+            // 
+            this.txtUsuario.BackColor = System.Drawing.SystemColors.Window;
+            this.txtUsuario.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.txtUsuario.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtUsuario.Location = new System.Drawing.Point(69, 154);
+            this.txtUsuario.Name = "txtUsuario";
+            this.txtUsuario.Size = new System.Drawing.Size(199, 16);
+            this.txtUsuario.TabIndex = 0;
             // 
             // FrmLogin
             // 
@@ -57,6 +71,8 @@ namespace SistemaHotel
             this.Text = "Login";
             this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
             this.Load += new System.EventHandler(this.FrmLogin_Load);
+            this.pnlLogin.ResumeLayout(false);
+            this.pnlLogin.PerformLayout();
             this.ResumeLayout(false);
 
         }
@@ -64,6 +80,7 @@ namespace SistemaHotel
         #endregion
 
         private System.Windows.Forms.Panel pnlLogin;
+        private System.Windows.Forms.TextBox txtUsuario;
     }
 }
 
