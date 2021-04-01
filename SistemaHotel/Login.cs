@@ -15,16 +15,32 @@ namespace SistemaHotel
         public FrmLogin()
         {
             InitializeComponent();
+            pnlLogin.Visible = false;
         }
 
         private void FrmLogin_Load(object sender, EventArgs e)
         {
             pnlLogin.Location = new Point(this.Width /2 - 166, Height / 2 - 170);
+            pnlLogin.Visible = true;
             btnLogin.FlatAppearance.MouseOverBackColor = Color.FromArgb(21, 114, 160);
             btnLogin.FlatAppearance.MouseDownBackColor = Color.FromArgb(8, 72, 103);
         }
 
         private void btnLogin_Click(object sender, EventArgs e)
+        {
+            ChamarLogin();
+            
+        }
+
+        private void FrmLogin_KeyDown(object sender, KeyEventArgs e)
+        {
+           if (e.KeyCode == Keys.Enter)
+            {
+                ChamarLogin();
+            }
+        }
+
+        private void ChamarLogin()
         {
             if (txtUsuario.Text == "")
             {
@@ -45,7 +61,6 @@ namespace SistemaHotel
             FrmMenu form = new FrmMenu();
             this.Hide();
             form.Show();
-            
         }
     }
 }
