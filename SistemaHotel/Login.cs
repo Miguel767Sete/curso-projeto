@@ -72,5 +72,10 @@ namespace SistemaHotel
             txtUsuario.Focus();
            
         }
+
+        private void FrmLogin_Resize(object sender, EventArgs e)
+        {
+            pnlLogin.Location = new Point(this.Width / 2 - 166, Height / 2 - 170);
+        }
     }
 }
