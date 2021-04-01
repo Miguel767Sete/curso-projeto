@@ -42,6 +42,10 @@ namespace SistemaHotel
 
             //AQUI VAI O CÓDIGO PARA LOGIN
 
+            FrmMenu form = new FrmMenu();
+            this.Hide();
+            form.Show();
+            
         }
     }
 }
