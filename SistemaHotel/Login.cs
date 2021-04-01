@@ -29,6 +29,7 @@ namespace SistemaHotel
         private void btnLogin_Click(object sender, EventArgs e)
         {
             ChamarLogin();
+           
             
         }
 
@@ -59,8 +60,17 @@ namespace SistemaHotel
             //AQUI VAI O CÓDIGO PARA LOGIN
 
             FrmMenu form = new FrmMenu();
-            this.Hide();
+            //this.Hide();
+            Limpar();
             form.Show();
+        }
+
+        private void Limpar()
+        {
+            txtUsuario.Text = "";
+            txtSenha.Text = "";
+            txtUsuario.Focus();
+           
         }
     }
 }
