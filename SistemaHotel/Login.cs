@@ -23,5 +23,25 @@ namespace SistemaHotel
             btnLogin.FlatAppearance.MouseOverBackColor = Color.FromArgb(21, 114, 160);
             btnLogin.FlatAppearance.MouseDownBackColor = Color.FromArgb(8, 72, 103);
         }
+
+        private void btnLogin_Click(object sender, EventArgs e)
+        {
+            if (txtUsuario.Text == "")
+            {
+                MessageBox.Show("Preencha o Usuário!");
+                txtUsuario.Focus();
+                return;
+            }
+
+            if (txtSenha.Text == "")
+            {
+                MessageBox.Show("Preencha a Senha!");
+                txtSenha.Focus();
+                return;
+            }
+
+            //AQUI VAI O CÓDIGO PARA LOGIN
+
+        }
     }
 }
