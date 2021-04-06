@@ -21,5 +21,10 @@ namespace SistemaHotel
         {
             this.WindowState = FormWindowState.Maximized;
         }
+
+        private void logautToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Close();
+        }
     }
 }
