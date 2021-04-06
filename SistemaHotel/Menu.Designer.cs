@@ -54,6 +54,8 @@ namespace SistemaHotel
             this.consultarReservasToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.checkOutToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.logautToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.panel1 = new System.Windows.Forms.Panel();
+            this.panel2 = new System.Windows.Forms.Panel();
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -241,11 +243,33 @@ namespace SistemaHotel
             this.logautToolStripMenuItem.Text = "Logout";
             this.logautToolStripMenuItem.Click += new System.EventHandler(this.logautToolStripMenuItem_Click);
             // 
+            // panel1
+            // 
+            this.panel1.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.panel1.BackColor = System.Drawing.SystemColors.AppWorkspace;
+            this.panel1.Location = new System.Drawing.Point(0, 27);
+            this.panel1.Name = "panel1";
+            this.panel1.Size = new System.Drawing.Size(619, 100);
+            this.panel1.TabIndex = 1;
+            // 
+            // panel2
+            // 
+            this.panel2.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.panel2.BackColor = System.Drawing.SystemColors.ControlDarkDark;
+            this.panel2.Location = new System.Drawing.Point(615, 27);
+            this.panel2.Name = "panel2";
+            this.panel2.Size = new System.Drawing.Size(193, 425);
+            this.panel2.TabIndex = 2;
+            // 
             // FrmMenu
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.panel2);
+            this.Controls.Add(this.panel1);
             this.Controls.Add(this.menuStrip1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.MainMenuStrip = this.menuStrip1;
@@ -287,5 +311,7 @@ namespace SistemaHotel
         private System.Windows.Forms.ToolStripMenuItem consultarReservasToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem checkOutToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem logautToolStripMenuItem;
+        private System.Windows.Forms.Panel panel1;
+        private System.Windows.Forms.Panel panel2;
     }
 }
