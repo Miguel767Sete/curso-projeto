@@ -29,6 +29,7 @@ namespace SistemaHotel
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FrmMenu));
             this.menuStrip1 = new System.Windows.Forms.MenuStrip();
             this.MenuCadastros = new System.Windows.Forms.ToolStripMenuItem();
             this.MenuProdutos = new System.Windows.Forms.ToolStripMenuItem();
@@ -80,8 +81,9 @@ namespace SistemaHotel
             this.quartosToolStripMenuItem,
             this.usuáriosToolStripMenuItem,
             this.serviçosToolStripMenuItem});
+            this.MenuCadastros.Image = ((System.Drawing.Image)(resources.GetObject("MenuCadastros.Image")));
             this.MenuCadastros.Name = "MenuCadastros";
-            this.MenuCadastros.Size = new System.Drawing.Size(71, 20);
+            this.MenuCadastros.Size = new System.Drawing.Size(87, 20);
             this.MenuCadastros.Text = "Cadastros";
             // 
             // MenuProdutos
@@ -89,8 +91,9 @@ namespace SistemaHotel
             this.MenuProdutos.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.novoProdutoToolStripMenuItem,
             this.estoqueToolStripMenuItem});
+            this.MenuProdutos.Image = ((System.Drawing.Image)(resources.GetObject("MenuProdutos.Image")));
             this.MenuProdutos.Name = "MenuProdutos";
-            this.MenuProdutos.Size = new System.Drawing.Size(67, 20);
+            this.MenuProdutos.Size = new System.Drawing.Size(83, 20);
             this.MenuProdutos.Text = "Produtos";
             // 
             // MenuChekInOut
@@ -98,8 +101,9 @@ namespace SistemaHotel
             this.MenuChekInOut.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.novoServiçoToolStripMenuItem,
             this.checkOutToolStripMenuItem});
+            this.MenuChekInOut.Image = ((System.Drawing.Image)(resources.GetObject("MenuChekInOut.Image")));
             this.MenuChekInOut.Name = "MenuChekInOut";
-            this.MenuChekInOut.Size = new System.Drawing.Size(90, 20);
+            this.MenuChekInOut.Size = new System.Drawing.Size(106, 20);
             this.MenuChekInOut.Text = "Check In/Out";
             // 
             // MenuMovimentacoes
@@ -108,8 +112,9 @@ namespace SistemaHotel
             this.novaVendaToolStripMenuItem,
             this.novoServiçoToolStripMenuItem1,
             this.entradaESaídasToolStripMenuItem});
+            this.MenuMovimentacoes.Image = ((System.Drawing.Image)(resources.GetObject("MenuMovimentacoes.Image")));
             this.MenuMovimentacoes.Name = "MenuMovimentacoes";
-            this.MenuMovimentacoes.Size = new System.Drawing.Size(104, 20);
+            this.MenuMovimentacoes.Size = new System.Drawing.Size(120, 20);
             this.MenuMovimentacoes.Text = "Movimentações";
             // 
             // MenuReservas
@@ -118,22 +123,25 @@ namespace SistemaHotel
             this.novaReservaToolStripMenuItem,
             this.quadroDeReservasToolStripMenuItem,
             this.consultarReservasToolStripMenuItem});
+            this.MenuReservas.Image = ((System.Drawing.Image)(resources.GetObject("MenuReservas.Image")));
             this.MenuReservas.Name = "MenuReservas";
-            this.MenuReservas.Size = new System.Drawing.Size(64, 20);
+            this.MenuReservas.Size = new System.Drawing.Size(80, 20);
             this.MenuReservas.Text = "Reservas";
             // 
             // MenuRelatorios
             // 
+            this.MenuRelatorios.Image = ((System.Drawing.Image)(resources.GetObject("MenuRelatorios.Image")));
             this.MenuRelatorios.Name = "MenuRelatorios";
-            this.MenuRelatorios.Size = new System.Drawing.Size(71, 20);
+            this.MenuRelatorios.Size = new System.Drawing.Size(87, 20);
             this.MenuRelatorios.Text = "Relatórios";
             // 
             // MenuSair
             // 
             this.MenuSair.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.logautToolStripMenuItem});
+            this.MenuSair.Image = ((System.Drawing.Image)(resources.GetObject("MenuSair.Image")));
             this.MenuSair.Name = "MenuSair";
-            this.MenuSair.Size = new System.Drawing.Size(38, 20);
+            this.MenuSair.Size = new System.Drawing.Size(54, 20);
             this.MenuSair.Text = "Sair";
             // 
             // funcionáriosToolStripMenuItem
