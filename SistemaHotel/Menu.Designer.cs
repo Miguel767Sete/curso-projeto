@@ -54,9 +54,12 @@ namespace SistemaHotel
             this.consultarReservasToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.checkOutToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.logautToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.panel1 = new System.Windows.Forms.Panel();
-            this.panel2 = new System.Windows.Forms.Panel();
+            this.pnlTopo = new System.Windows.Forms.Panel();
+            this.pnlRigtht = new System.Windows.Forms.Panel();
+            this.label1 = new System.Windows.Forms.Label();
+            this.label2 = new System.Windows.Forms.Label();
             this.menuStrip1.SuspendLayout();
+            this.pnlRigtht.SuspendLayout();
             this.SuspendLayout();
             // 
             // menuStrip1
@@ -243,33 +246,57 @@ namespace SistemaHotel
             this.logautToolStripMenuItem.Text = "Logout";
             this.logautToolStripMenuItem.Click += new System.EventHandler(this.logautToolStripMenuItem_Click);
             // 
-            // panel1
+            // pnlTopo
             // 
-            this.panel1.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            this.pnlTopo.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.panel1.BackColor = System.Drawing.SystemColors.AppWorkspace;
-            this.panel1.Location = new System.Drawing.Point(0, 27);
-            this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(619, 100);
-            this.panel1.TabIndex = 1;
+            this.pnlTopo.BackColor = System.Drawing.SystemColors.AppWorkspace;
+            this.pnlTopo.Location = new System.Drawing.Point(0, 27);
+            this.pnlTopo.Name = "pnlTopo";
+            this.pnlTopo.Size = new System.Drawing.Size(619, 75);
+            this.pnlTopo.TabIndex = 1;
             // 
-            // panel2
+            // pnlRigtht
             // 
-            this.panel2.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            this.pnlRigtht.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.panel2.BackColor = System.Drawing.SystemColors.ControlDarkDark;
-            this.panel2.Location = new System.Drawing.Point(615, 27);
-            this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(193, 425);
-            this.panel2.TabIndex = 2;
+            this.pnlRigtht.BackColor = System.Drawing.SystemColors.ControlDarkDark;
+            this.pnlRigtht.Controls.Add(this.label2);
+            this.pnlRigtht.Controls.Add(this.label1);
+            this.pnlRigtht.Location = new System.Drawing.Point(615, 27);
+            this.pnlRigtht.Name = "pnlRigtht";
+            this.pnlRigtht.Size = new System.Drawing.Size(193, 425);
+            this.pnlRigtht.TabIndex = 2;
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.label1.Location = new System.Drawing.Point(19, 60);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(36, 15);
+            this.label1.TabIndex = 0;
+            this.label1.Text = "Data:";
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.label2.Location = new System.Drawing.Point(19, 89);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(37, 15);
+            this.label2.TabIndex = 1;
+            this.label2.Text = "Hora:";
             // 
             // FrmMenu
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
-            this.Controls.Add(this.panel2);
-            this.Controls.Add(this.panel1);
+            this.Controls.Add(this.pnlRigtht);
+            this.Controls.Add(this.pnlTopo);
             this.Controls.Add(this.menuStrip1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.MainMenuStrip = this.menuStrip1;
@@ -277,9 +304,12 @@ namespace SistemaHotel
             this.Name = "FrmMenu";
             this.Text = "Hotel";
             this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
+            this.Load += new System.EventHandler(this.FrmMenu_Load);
             this.Resize += new System.EventHandler(this.FrmMenu_Resize);
             this.menuStrip1.ResumeLayout(false);
             this.menuStrip1.PerformLayout();
+            this.pnlRigtht.ResumeLayout(false);
+            this.pnlRigtht.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -311,7 +341,9 @@ namespace SistemaHotel
         private System.Windows.Forms.ToolStripMenuItem consultarReservasToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem checkOutToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem logautToolStripMenuItem;
-        private System.Windows.Forms.Panel panel1;
-        private System.Windows.Forms.Panel panel2;
+        private System.Windows.Forms.Panel pnlTopo;
+        private System.Windows.Forms.Panel pnlRigtht;
+        private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.Label label1;
     }
 }
