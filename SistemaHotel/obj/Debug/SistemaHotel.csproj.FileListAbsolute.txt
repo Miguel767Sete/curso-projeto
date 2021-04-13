@@ -9,3 +9,4 @@ C:\ProjetosC#\SistemaHotel\SistemaHotel\obj\Debug\SistemaHotel.exe
 C:\ProjetosC#\SistemaHotel\SistemaHotel\obj\Debug\SistemaHotel.pdb
 C:\ProjetosC#\SistemaHotel\SistemaHotel\obj\Debug\SistemaHotel.FrmLogin.resources
 C:\ProjetosC#\SistemaHotel\SistemaHotel\obj\Debug\SistemaHotel.FrmMenu.resources
+C:\ProjetosC#\SistemaHotel\SistemaHotel\obj\Debug\SistemaHotel.Cadastros.FrmFuncionarios.resources
