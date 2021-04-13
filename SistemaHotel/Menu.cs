@@ -30,7 +30,7 @@ namespace SistemaHotel
         private void FrmMenu_Load(object sender, EventArgs e)
         {
             pnlTopo.BackColor = Color.FromArgb(230, 230, 230);
-            pnlRigtht.BackColor = Color.FromArgb(170, 170, 170);
+            pnlRigtht.BackColor = Color.FromArgb(70, 70, 70);
         }
     }
 }

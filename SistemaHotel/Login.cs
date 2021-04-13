@@ -69,7 +69,7 @@ namespace SistemaHotel
         {
             txtUsuario.Text = "";
             txtSenha.Text = "";
-            txtUsuario.Focus();
+           txtUsuario.Focus();
            
         }
 
