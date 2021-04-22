@@ -63,6 +63,8 @@ namespace SistemaHotel
             this.button2 = new System.Windows.Forms.Button();
             this.button1 = new System.Windows.Forms.Button();
             this.pnlRigtht = new System.Windows.Forms.Panel();
+            this.label14 = new System.Windows.Forms.Label();
+            this.label15 = new System.Windows.Forms.Label();
             this.label10 = new System.Windows.Forms.Label();
             this.label11 = new System.Windows.Forms.Label();
             this.pictureBox3 = new System.Windows.Forms.PictureBox();
@@ -79,8 +81,6 @@ namespace SistemaHotel
             this.label3 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
-            this.label14 = new System.Windows.Forms.Label();
-            this.label15 = new System.Windows.Forms.Label();
             this.menuStrip1.SuspendLayout();
             this.pnlTopo.SuspendLayout();
             this.pnlRigtht.SuspendLayout();
@@ -121,31 +121,32 @@ namespace SistemaHotel
             // funcionáriosToolStripMenuItem
             // 
             this.funcionáriosToolStripMenuItem.Name = "funcionáriosToolStripMenuItem";
-            this.funcionáriosToolStripMenuItem.Size = new System.Drawing.Size(142, 22);
+            this.funcionáriosToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.funcionáriosToolStripMenuItem.Text = "Funcionários";
+            this.funcionáriosToolStripMenuItem.Click += new System.EventHandler(this.funcionáriosToolStripMenuItem_Click);
             // 
             // hóspedesToolStripMenuItem
             // 
             this.hóspedesToolStripMenuItem.Name = "hóspedesToolStripMenuItem";
-            this.hóspedesToolStripMenuItem.Size = new System.Drawing.Size(142, 22);
+            this.hóspedesToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.hóspedesToolStripMenuItem.Text = "Hóspedes";
             // 
             // quartosToolStripMenuItem
             // 
             this.quartosToolStripMenuItem.Name = "quartosToolStripMenuItem";
-            this.quartosToolStripMenuItem.Size = new System.Drawing.Size(142, 22);
+            this.quartosToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.quartosToolStripMenuItem.Text = "Quartos";
             // 
             // usuáriosToolStripMenuItem
             // 
             this.usuáriosToolStripMenuItem.Name = "usuáriosToolStripMenuItem";
-            this.usuáriosToolStripMenuItem.Size = new System.Drawing.Size(142, 22);
+            this.usuáriosToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.usuáriosToolStripMenuItem.Text = "Usuários";
             // 
             // serviçosToolStripMenuItem
             // 
             this.serviçosToolStripMenuItem.Name = "serviçosToolStripMenuItem";
-            this.serviçosToolStripMenuItem.Size = new System.Drawing.Size(142, 22);
+            this.serviçosToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.serviçosToolStripMenuItem.Text = "Serviços";
             // 
             // MenuProdutos
@@ -161,13 +162,13 @@ namespace SistemaHotel
             // novoProdutoToolStripMenuItem
             // 
             this.novoProdutoToolStripMenuItem.Name = "novoProdutoToolStripMenuItem";
-            this.novoProdutoToolStripMenuItem.Size = new System.Drawing.Size(149, 22);
+            this.novoProdutoToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.novoProdutoToolStripMenuItem.Text = "Novo Produto";
             // 
             // estoqueToolStripMenuItem
             // 
             this.estoqueToolStripMenuItem.Name = "estoqueToolStripMenuItem";
-            this.estoqueToolStripMenuItem.Size = new System.Drawing.Size(149, 22);
+            this.estoqueToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.estoqueToolStripMenuItem.Text = "Estoque";
             // 
             // MenuMovimentacoes
@@ -184,19 +185,19 @@ namespace SistemaHotel
             // novaVendaToolStripMenuItem
             // 
             this.novaVendaToolStripMenuItem.Name = "novaVendaToolStripMenuItem";
-            this.novaVendaToolStripMenuItem.Size = new System.Drawing.Size(159, 22);
+            this.novaVendaToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.novaVendaToolStripMenuItem.Text = "Nova Venda";
             // 
             // novoServiçoToolStripMenuItem1
             // 
             this.novoServiçoToolStripMenuItem1.Name = "novoServiçoToolStripMenuItem1";
-            this.novoServiçoToolStripMenuItem1.Size = new System.Drawing.Size(159, 22);
+            this.novoServiçoToolStripMenuItem1.Size = new System.Drawing.Size(180, 22);
             this.novoServiçoToolStripMenuItem1.Text = "Novo Serviço";
             // 
             // entradaESaídasToolStripMenuItem
             // 
             this.entradaESaídasToolStripMenuItem.Name = "entradaESaídasToolStripMenuItem";
-            this.entradaESaídasToolStripMenuItem.Size = new System.Drawing.Size(159, 22);
+            this.entradaESaídasToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.entradaESaídasToolStripMenuItem.Text = "Entrada e Saídas";
             // 
             // MenuReservas
@@ -213,19 +214,19 @@ namespace SistemaHotel
             // novaReservaToolStripMenuItem
             // 
             this.novaReservaToolStripMenuItem.Name = "novaReservaToolStripMenuItem";
-            this.novaReservaToolStripMenuItem.Size = new System.Drawing.Size(178, 22);
+            this.novaReservaToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.novaReservaToolStripMenuItem.Text = "Nova Reserva";
             // 
             // quadroDeReservasToolStripMenuItem
             // 
             this.quadroDeReservasToolStripMenuItem.Name = "quadroDeReservasToolStripMenuItem";
-            this.quadroDeReservasToolStripMenuItem.Size = new System.Drawing.Size(178, 22);
+            this.quadroDeReservasToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.quadroDeReservasToolStripMenuItem.Text = "Quadro de Reservas";
             // 
             // consultarReservasToolStripMenuItem
             // 
             this.consultarReservasToolStripMenuItem.Name = "consultarReservasToolStripMenuItem";
-            this.consultarReservasToolStripMenuItem.Size = new System.Drawing.Size(178, 22);
+            this.consultarReservasToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.consultarReservasToolStripMenuItem.Text = "Consultar Reservas";
             // 
             // MenuChekInOut
@@ -241,13 +242,13 @@ namespace SistemaHotel
             // novoServiçoToolStripMenuItem
             // 
             this.novoServiçoToolStripMenuItem.Name = "novoServiçoToolStripMenuItem";
-            this.novoServiçoToolStripMenuItem.Size = new System.Drawing.Size(130, 22);
+            this.novoServiçoToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.novoServiçoToolStripMenuItem.Text = "Check In";
             // 
             // checkOutToolStripMenuItem
             // 
             this.checkOutToolStripMenuItem.Name = "checkOutToolStripMenuItem";
-            this.checkOutToolStripMenuItem.Size = new System.Drawing.Size(130, 22);
+            this.checkOutToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.checkOutToolStripMenuItem.Text = "Check Out";
             // 
             // MenuRelatorios
@@ -269,7 +270,7 @@ namespace SistemaHotel
             // logautToolStripMenuItem
             // 
             this.logautToolStripMenuItem.Name = "logautToolStripMenuItem";
-            this.logautToolStripMenuItem.Size = new System.Drawing.Size(112, 22);
+            this.logautToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.logautToolStripMenuItem.Text = "Logout";
             this.logautToolStripMenuItem.Click += new System.EventHandler(this.logautToolStripMenuItem_Click);
             // 
@@ -408,6 +409,28 @@ namespace SistemaHotel
             this.pnlRigtht.Name = "pnlRigtht";
             this.pnlRigtht.Size = new System.Drawing.Size(401, 611);
             this.pnlRigtht.TabIndex = 2;
+            // 
+            // label14
+            // 
+            this.label14.AutoSize = true;
+            this.label14.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label14.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.label14.Location = new System.Drawing.Point(160, 557);
+            this.label14.Name = "label14";
+            this.label14.Size = new System.Drawing.Size(16, 18);
+            this.label14.TabIndex = 17;
+            this.label14.Text = "5";
+            // 
+            // label15
+            // 
+            this.label15.AutoSize = true;
+            this.label15.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label15.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.label15.Location = new System.Drawing.Point(8, 557);
+            this.label15.Name = "label15";
+            this.label15.Size = new System.Drawing.Size(139, 18);
+            this.label15.TabIndex = 16;
+            this.label15.Text = "Quartos Ocupados:";
             // 
             // label10
             // 
@@ -581,28 +604,6 @@ namespace SistemaHotel
             this.label1.Size = new System.Drawing.Size(103, 29);
             this.label1.TabIndex = 0;
             this.label1.Text = "13:00:00";
-            // 
-            // label14
-            // 
-            this.label14.AutoSize = true;
-            this.label14.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label14.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.label14.Location = new System.Drawing.Point(160, 557);
-            this.label14.Name = "label14";
-            this.label14.Size = new System.Drawing.Size(16, 18);
-            this.label14.TabIndex = 17;
-            this.label14.Text = "5";
-            // 
-            // label15
-            // 
-            this.label15.AutoSize = true;
-            this.label15.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label15.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.label15.Location = new System.Drawing.Point(8, 557);
-            this.label15.Name = "label15";
-            this.label15.Size = new System.Drawing.Size(139, 18);
-            this.label15.TabIndex = 16;
-            this.label15.Text = "Quartos Ocupados:";
             // 
             // FrmMenu
             // 

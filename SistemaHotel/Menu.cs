@@ -32,5 +32,11 @@ namespace SistemaHotel
             pnlTopo.BackColor = Color.FromArgb(230, 230, 230);
             pnlRigtht.BackColor = Color.FromArgb(70, 70, 70);
         }
+
+        private void funcionáriosToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Cadastros.FrmFuncionarios form = new Cadastros.FrmFuncionarios();
+            form.Show();
+        }
     }
 }

@@ -31,8 +31,6 @@ namespace SistemaHotel.Cadastros
         {
             this.label1 = new System.Windows.Forms.Label();
             this.textBuscar = new System.Windows.Forms.TextBox();
-            this.label12 = new System.Windows.Forms.Label();
-            this.label13 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.textBox1 = new System.Windows.Forms.TextBox();
             this.label3 = new System.Windows.Forms.Label();
@@ -42,7 +40,7 @@ namespace SistemaHotel.Cadastros
             this.label5 = new System.Windows.Forms.Label();
             this.maskedTextBox2 = new System.Windows.Forms.MaskedTextBox();
             this.label6 = new System.Windows.Forms.Label();
-            this.textBox3 = new System.Windows.Forms.TextBox();
+            this.comboBox1 = new System.Windows.Forms.ComboBox();
             this.SuspendLayout();
             // 
             // label1
@@ -60,28 +58,6 @@ namespace SistemaHotel.Cadastros
             this.textBuscar.Name = "textBuscar";
             this.textBuscar.Size = new System.Drawing.Size(100, 20);
             this.textBuscar.TabIndex = 50;
-            // 
-            // label12
-            // 
-            this.label12.AutoSize = true;
-            this.label12.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label12.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.label12.Location = new System.Drawing.Point(464, 216);
-            this.label12.Name = "label12";
-            this.label12.Size = new System.Drawing.Size(24, 18);
-            this.label12.TabIndex = 52;
-            this.label12.Text = "10";
-            // 
-            // label13
-            // 
-            this.label13.AutoSize = true;
-            this.label13.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label13.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.label13.Location = new System.Drawing.Point(312, 216);
-            this.label13.Name = "label13";
-            this.label13.Size = new System.Drawing.Size(146, 18);
-            this.label13.TabIndex = 51;
-            this.label13.Text = "Quartos Disponíveis:";
             // 
             // label2
             // 
@@ -110,7 +86,7 @@ namespace SistemaHotel.Cadastros
             // 
             // maskedTextBox1
             // 
-            this.maskedTextBox1.Location = new System.Drawing.Point(326, 153);
+            this.maskedTextBox1.Location = new System.Drawing.Point(326, 147);
             this.maskedTextBox1.Mask = "000,000,000-00";
             this.maskedTextBox1.Name = "maskedTextBox1";
             this.maskedTextBox1.Size = new System.Drawing.Size(100, 20);
@@ -127,7 +103,7 @@ namespace SistemaHotel.Cadastros
             // 
             // textBox2
             // 
-            this.textBox2.Location = new System.Drawing.Point(560, 160);
+            this.textBox2.Location = new System.Drawing.Point(560, 147);
             this.textBox2.Name = "textBox2";
             this.textBox2.Size = new System.Drawing.Size(100, 20);
             this.textBox2.TabIndex = 3;
@@ -158,19 +134,20 @@ namespace SistemaHotel.Cadastros
             this.label6.TabIndex = 58;
             this.label6.Text = "Cargo:";
             // 
-            // textBox3
+            // comboBox1
             // 
-            this.textBox3.Location = new System.Drawing.Point(326, 210);
-            this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(100, 20);
-            this.textBox3.TabIndex = 6;
+            this.comboBox1.FormattingEnabled = true;
+            this.comboBox1.Location = new System.Drawing.Point(326, 216);
+            this.comboBox1.Name = "comboBox1";
+            this.comboBox1.Size = new System.Drawing.Size(121, 21);
+            this.comboBox1.TabIndex = 5;
             // 
             // FrmFuncionarios
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(764, 450);
-            this.Controls.Add(this.textBox3);
+            this.Controls.Add(this.comboBox1);
             this.Controls.Add(this.label6);
             this.Controls.Add(this.maskedTextBox2);
             this.Controls.Add(this.label5);
@@ -180,8 +157,6 @@ namespace SistemaHotel.Cadastros
             this.Controls.Add(this.label3);
             this.Controls.Add(this.textBox1);
             this.Controls.Add(this.label2);
-            this.Controls.Add(this.label12);
-            this.Controls.Add(this.label13);
             this.Controls.Add(this.textBuscar);
             this.Controls.Add(this.label1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
@@ -198,8 +173,6 @@ namespace SistemaHotel.Cadastros
 
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.TextBox textBuscar;
-        private System.Windows.Forms.Label label12;
-        private System.Windows.Forms.Label label13;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.TextBox textBox1;
         private System.Windows.Forms.Label label3;
@@ -209,6 +182,6 @@ namespace SistemaHotel.Cadastros
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.MaskedTextBox maskedTextBox2;
         private System.Windows.Forms.Label label6;
-        private System.Windows.Forms.TextBox textBox3;
+        private System.Windows.Forms.ComboBox comboBox1;
     }
 }
