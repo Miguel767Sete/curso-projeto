@@ -38,5 +38,7 @@ namespace SistemaHotel
             Cadastros.FrmFuncionarios form = new Cadastros.FrmFuncionarios();
             form.Show();
         }
+
+        
     }
 }

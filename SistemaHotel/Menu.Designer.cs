@@ -117,6 +117,7 @@ namespace SistemaHotel
             this.MenuCadastros.Name = "MenuCadastros";
             this.MenuCadastros.Size = new System.Drawing.Size(87, 20);
             this.MenuCadastros.Text = "Cadastros";
+            
             // 
             // funcionáriosToolStripMenuItem
             // 
